@@ -1,3 +1,6 @@
+import utils.Mesaje;
+import utils.Operatii;
+
 public class Main {
     public static void main(String[] args) {
         String[] languages = {"Java", "C#", "Python", "PHP"};
@@ -14,7 +17,7 @@ public class Main {
         n += 0xFF;
         System.out.println(n);
 
-        int aux;
+        int aux = 0;
         while (n > 9) {
             aux = 0;
             while (n != 0){
@@ -24,5 +27,9 @@ public class Main {
             n = aux;
         }
         System.out.println(n);
+        System.out.println();
+
+        System.out.println(Operatii.sum(aux, n));
+        Mesaje.message();
     }
 }
